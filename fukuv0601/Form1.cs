@@ -30,11 +30,13 @@ namespace fukuv0601
 
             if (label1.Left < 0)
             {
-                vx = Math.Abs(vx + (vx / 5));
+                vx = Math.Abs(vx + (vx / 10));
+                vy = vy + (vy / 10);
             }
             else if (label1.Right > ClientSize.Width)
             {
-                vx = -Math.Abs(vx + (vx / 5));
+                vy = vy + (vy / 10);
+                vx = -Math.Abs(vx + (vx / 10));
             }
             if (label1.Top < 0)
             {
