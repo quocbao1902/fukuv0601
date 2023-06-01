@@ -38,15 +38,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(347, 191);
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Yu Gothic UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(730, 164);
+            label1.MaximumSize = new Size(120, 120);
+            label1.MinimumSize = new Size(60, 60);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(70, 60);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "(・。・)";
+            label1.TextAlign = ContentAlignment.TopCenter;
+            label1.Click += label1_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(162, 187);
+            button1.Location = new Point(632, 415);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
@@ -56,11 +62,12 @@
             // 
             // timer1
             // 
+            timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
             // button2
             // 
-            button2.Location = new Point(532, 196);
+            button2.Location = new Point(713, 415);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 2;
